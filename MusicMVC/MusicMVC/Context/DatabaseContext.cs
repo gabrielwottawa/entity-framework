@@ -10,14 +10,14 @@ namespace MusicMVC.Context
     {
         public DatabaseContext() : base("MusicContext") { }
 
-        public System.Data.Entity.DbSet<MusicMVC.Models.Album> Albums { get; set; }
+        public DbSet<Models.Album> Albums { get; set; }
 
-        public System.Data.Entity.DbSet<MusicMVC.Models.Artist> Artists { get; set; }
+        public DbSet<Models.Artist> Artists { get; set; }
 
-        public System.Data.Entity.DbSet<MusicMVC.Models.Genre> Genres { get; set; }
+        public DbSet<Models.Genre> Genres { get; set; }
 
-        public System.Data.Entity.DbSet<MusicMVC.Models.Music> Musics { get; set; }
+        public DbSet<Models.Music> Musics { get; set; }
 
-        public System.Data.Entity.DbSet<MusicMVC.Models.Artists_Genres> Artists_Genres { get; set; }
+        public DbSet<Models.Artists_Genres> Artists_Genres { get; set; }
     }
 }
